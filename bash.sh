@@ -10,6 +10,7 @@ pug ./template/views/ -o ./raw/views/
 
 # copy js
 echo Coping js files
-cp -R ./template/js/* ./raw/js/
+cp -R ./template/js/ ./raw/js/
+cp -R ./template/images/ ./raw/
 
 echo Done.

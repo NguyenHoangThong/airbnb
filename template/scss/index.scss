@@ -1,3 +1,117 @@
 .header{
-    background-color: #00B7FF;
+    .logo {
+        .images {
+            width: 34px;
+            height: 34px;
+            margin: 1em;
+
+        }
+
+    };
+    .navbar1 {
+        font-size: 14px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+            padding-top: 20px;
+            padding-right: 20px;
+            li {
+                font-family: Arial;
+                display: inline;
+                margin: 10px;
+                a {
+                    position: relative;
+                }
+                a:after {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 0%;
+                    content: '.';
+                    color: transparent;
+                    background: #aaa;
+                    height: 2px;
+                }
+                a:hover:after {
+                    width: 100%;
+                }
+            }
+        };
+    }
+}
+
+.intro {
+    font-size: 40px;
+    font-family: Arial;
+    margin: auto;
+    width: 50%;
+    .label {
+        color: #FF5A5F;
+    }
+    .search {
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        width: 100%;
+        padding: 10px;
+        .images1{
+            display: flex;
+        }
+        .images {
+            border: hidden;
+            display: block;
+            margin: 0 auto;
+
+        }
+        .input {
+            display: inline;
+            border: hidden;
+            width: 100%;
+            border:0px;
+
+        }
+        .input:focus {
+            outline: none;
+        }
+        .button {
+            display: inline;
+            border: #FF5A5F;
+            float: right;
+            background: #FF5A5F;
+            border-radius: 3%;
+            color: white;
+        }
+
+    }
+}
+
+.main {
+    .explore{
+        border: none;
+        .label{
+
+        }
+        .line {
+            display: inline;
+        }
+        .images{
+            width: 96px;
+            height: 72px;
+        }
+        .button{
+            display: -webkit-inline-flex;
+            background: white;
+            color: dimgray;
+            margin-right: 20px;
+            .text {
+                display: flex;
+            }
+        }
+        .show {
+            width: 100%;
+        }
+    }
 }
