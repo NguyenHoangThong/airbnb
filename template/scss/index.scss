@@ -48,11 +48,12 @@
     font-size: 40px;
     font-family: Arial;
     margin: auto;
-    width: 50%;
+    width: 60%;
     .label {
         color: #FF5A5F;
     }
     .search {
+        border-shadow:0 5px 30px rgba(156, 160, 171, 0.25) !important;
         border: 2px solid #ccc;
         border-radius: 4px;
         width: 100%;
@@ -89,29 +90,128 @@
 }
 
 .main {
+    margin: auto;
+    width: 80%;
     .explore{
+        margin-top: 140px;
         border: none;
+        margin-bottom: 60px;
         .label{
-
+            margin-bottom: 20px;
         }
         .line {
             display: inline;
         }
         .images{
             width: 96px;
-            height: 72px;
+            height: 70px;
+            margin-right: 10px;
+            border-radius: 2px;
         }
         .button{
+            width: 244px;
+            height: 75px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            padding: 1px;
             display: -webkit-inline-flex;
             background: white;
             color: dimgray;
-            margin-right: 20px;
+            margin-right: 40px;
             .text {
-                display: flex;
+                text-align: center;
             }
         }
         .show {
             width: 100%;
         }
+    }
+
+    .experiences {
+        .label{
+            margin-bottom: 20px;
+        }
+        .images {
+            width: 100%;
+            height: 164px;
+            border-radius: 5%;
+        }
+        .checked {
+            color: #37ffe7;
+        }
+        .show{
+            .line{
+                margin-bottom: 40px;
+                .title {
+                    font-size: 13px;
+                    display: inline;
+                }
+                .middle {
+                    font-size: 18px;
+                    display: inline-flex;
+                    font-family: Arial;
+                }
+                .price {
+                    font-size: 13px;
+                }
+                .star {
+                    font-size: 10px;
+                }
+            }
+        }
+        .showall {
+            font-size: 18px;
+            font-family: cursive;
+            color: #37ffe7;
+            .link {
+                color: #37ffe7;
+                margin-bottom: 40px;
+            }
+            .link:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+}
+.footer{
+    hr{
+        line-height: 1;
+        margin-bottom: 60px;
+    };
+    .main{
+        margin: auto;
+        width: 80%;
+        .styled-select{
+            margin-bottom: 20px;
+            select {
+                background: transparent;
+                border: none;
+                font-size: 14px;
+                height: 29px;
+                padding: 5px; /* If you add too much padding here, the options won't show in IE */
+                width: 268px;
+            }
+        }
+
+        .styled-select.slate {
+            height: 34px;
+            width: 240px;
+        }
+
+        .styled-select.slate select {
+            border: 1px solid #ccc;
+            font-size: 16px;
+            height: 34px;
+            width: 268px;
+        }
+        .content {
+            text-align: center;
+            .text {
+                display: inline-block;
+            }
+
+        }
+
     }
 }

@@ -36,10 +36,11 @@
   font-size: 40px;
   font-family: Arial;
   margin: auto;
-  width: 50%; }
+  width: 60%; }
   .intro .label {
     color: #FF5A5F; }
   .intro .search {
+    border-shadow: 0 5px 30px rgba(156, 160, 171, 0.25) !important;
     border: 2px solid #ccc;
     border-radius: 4px;
     width: 100%;
@@ -65,19 +66,93 @@
       border-radius: 3%;
       color: white; }
 
-.main .explore {
-  border: none; }
-  .main .explore .line {
-    display: inline; }
-  .main .explore .images {
-    width: 96px;
-    height: 72px; }
-  .main .explore .button {
-    display: -webkit-inline-flex;
-    background: white;
-    color: dimgray;
-    margin-right: 20px; }
-    .main .explore .button .text {
-      display: flex; }
-  .main .explore .show {
-    width: 100%; }
+.main {
+  margin: auto;
+  width: 80%; }
+  .main .explore {
+    margin-top: 140px;
+    border: none;
+    margin-bottom: 60px; }
+    .main .explore .label {
+      margin-bottom: 20px; }
+    .main .explore .line {
+      display: inline; }
+    .main .explore .images {
+      width: 96px;
+      height: 70px;
+      margin-right: 10px;
+      border-radius: 2px; }
+    .main .explore .button {
+      width: 244px;
+      height: 75px;
+      border: 2px solid #ccc;
+      border-radius: 4px;
+      padding: 1px;
+      display: -webkit-inline-flex;
+      background: white;
+      color: dimgray;
+      margin-right: 40px; }
+      .main .explore .button .text {
+        text-align: center; }
+    .main .explore .show {
+      width: 100%; }
+  .main .experiences .label {
+    margin-bottom: 20px; }
+  .main .experiences .images {
+    width: 100%;
+    height: 164px;
+    border-radius: 5%; }
+  .main .experiences .checked {
+    color: #37ffe7; }
+  .main .experiences .show .line {
+    margin-bottom: 40px; }
+    .main .experiences .show .line .title {
+      font-size: 13px;
+      display: inline; }
+    .main .experiences .show .line .middle {
+      font-size: 18px;
+      display: inline-flex;
+      font-family: Arial; }
+    .main .experiences .show .line .price {
+      font-size: 13px; }
+    .main .experiences .show .line .star {
+      font-size: 10px; }
+  .main .experiences .showall {
+    font-size: 18px;
+    font-family: cursive;
+    color: #37ffe7; }
+    .main .experiences .showall .link {
+      color: #37ffe7;
+      margin-bottom: 40px; }
+    .main .experiences .showall .link:hover {
+      text-decoration: underline; }
+
+.footer hr {
+  line-height: 1;
+  margin-bottom: 60px; }
+
+.footer .main {
+  margin: auto;
+  width: 80%; }
+  .footer .main .styled-select {
+    margin-bottom: 20px; }
+    .footer .main .styled-select select {
+      background: transparent;
+      border: none;
+      font-size: 14px;
+      height: 29px;
+      padding: 5px;
+      /* If you add too much padding here, the options won't show in IE */
+      width: 268px; }
+  .footer .main .styled-select.slate {
+    height: 34px;
+    width: 240px; }
+  .footer .main .styled-select.slate select {
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 34px;
+    width: 268px; }
+  .footer .main .content {
+    text-align: center; }
+    .footer .main .content .text {
+      display: inline-block; }
